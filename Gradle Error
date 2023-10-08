@@ -1,0 +1,20 @@
+An issue was found when checking AAR metadata:
+
+  1.  Dependency 'androidx.activity:activity:1.8.0' requires libraries and applications that
+      depend on it to compile against version 34 or later of the
+      Android APIs.
+
+      :app is currently compiled against android-33.
+
+      Also, the maximum recommended compile SDK version for Android Gradle
+      plugin 7.3.1 is 33.
+
+      Recommended action: Update this project's version of the Android Gradle
+      plugin to one that supports 34, then update this project to use
+      compileSdkVerion of at least 34.
+
+      Note that updating a library or application's compileSdkVersion (which
+      allows newer APIs to be used) can be done separately from updating
+      targetSdkVersion (which opts the app in to new runtime behavior) and
+      minSdkVersion (which determines which devices the app can be installed
+      on).
